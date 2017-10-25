@@ -1,0 +1,9 @@
+### Created by thopper91 (2017)
+##
+## This playbook will execute a PowerShell Script and will output a textfile in a location
+## if it does not currently exist
+---
+- win_shell: C:\Users\{{ user }}\Downloads\{{ powershell_script }} >> C:\Users\{{ user }}\Documents\{{ file_name }}
+  args:
+    chdir: C:\Users\{{ user }}\Documents
+    creates: C:\Users\{{ user }}\Documents\{{ file_name }}

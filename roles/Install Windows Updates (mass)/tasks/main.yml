@@ -1,0 +1,17 @@
+### Created by thopper91 (2017)
+---
+## Install all available updates
+- win_updates:
+    category_names:
+      - Application
+      - Connectors
+      - CriticalUpdates
+      - DefinitionUpdates
+      - DeveloperKits
+      - FeaturePacks
+      - Guidance
+      - SecurityUpdates
+      - ServicePacks
+      - Tools
+      - UpdateRollups
+      - Updates

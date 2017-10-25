@@ -1,0 +1,7 @@
+{
+    "ip":"0.0.0.1",
+    "credentials": {
+        "userName":"USERNAME",
+        "password":"PASSWORD"
+        },
+}

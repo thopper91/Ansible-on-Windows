@@ -1,0 +1,6 @@
+### Created by thopper91 (2017)
+---
+- name: Stop "{{ service }}"
+  win_service:
+    name: "{{ service }}"
+    state: stopped

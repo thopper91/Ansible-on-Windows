@@ -1,0 +1,11 @@
+### Created by thopper91 (2017)
+---
+- name: Download "{{ Tool }}"
+  win_get_url:
+    url: http://URL/{{ Tool }}
+    dest: C:\Users\{{ user }}\Documents\{{ Tool }}
+
+- name: Install "{{ Tool }}" and wait for it to complete
+  win_msi:
+    path: C:\Users\{{ user }}\Documents\{{ Tool }}
+    wait: yes

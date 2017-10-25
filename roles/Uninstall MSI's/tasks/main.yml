@@ -1,0 +1,6 @@
+### Created by thopper91 (2017)
+---
+- name: Uninstall "{{ Tool }}"
+  win_msi:
+    path: C:\Users\{{ user }}\Documents\{{ Tool }}
+    state: absent

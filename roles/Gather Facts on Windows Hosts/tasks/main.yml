@@ -1,0 +1,31 @@
+### Created by thopper91 (2017)
+##
+## If requiring more win_commands, any cmd commands can be used here. If unsure on what is available (specifically
+## to the current Windows OS you plan or are using), then please follow this link:
+## https://www.lifewire.com/list-of-command-prompt-commands-4092302
+##
+---
+- name: Who Am I?
+  config: '{{ playbook_dir }}/config.json'
+  win_command: whoami
+  register: Who_Am_I
+
+- name: Gathering Certificate Authority (CA) details
+  config: '{{ playbook_dir }}/config.json'
+  win_command: certutil
+  register: Certificate_Authority
+
+- name: Gathering Disk Performance details
+  config: '{{ playbook_dir }}/config.json'
+  win_command: diskperf
+  register: Disk_Performance
+
+- name: Gathering All Network Connections and Listening Ports
+  config: '{{ playbook_dir }}/config.json'
+  win_command: netstat
+  register: Network_Connections_and_Ports
+
+- debug: var=Who_Am_I
+- debug: var=Certificate_Authority
+- debug: var=Disk_Performance
+- debug: var=Network_Connections_and_Ports

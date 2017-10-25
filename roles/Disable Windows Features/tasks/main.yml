@@ -1,0 +1,6 @@
+### Created by thopper91 (2017)
+---
+- name: Uninstall Telnet
+  win_feature:
+    name: Telnet-Client
+    state: absent

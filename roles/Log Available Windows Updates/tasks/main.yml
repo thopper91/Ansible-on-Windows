@@ -1,0 +1,7 @@
+### Created by thopper91 (2017)
+---
+## Search only: if any updates found, save as a txt file
+- win_updates:
+    category_names: SecurityUpdates
+    state: searched
+    log_path: C:\Users\{{ user }}\Documents\{{ file_name }}

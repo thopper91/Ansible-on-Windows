@@ -1,0 +1,5 @@
+[windows]
+0.0.0.2
+
+[localhost]
+localhost ansible_python_interpreter=python

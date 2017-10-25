@@ -1,0 +1,6 @@
+### Created by thopper91 (2017)
+---
+## Install only specific updates
+- win_updates:
+    category_names:
+      - ServicePacks
