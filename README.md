@@ -1,19 +1,13 @@
 # Ansible-on-Windows
 The repository will assist you in using Ansible for a windows host machine. The modules are different and the required installation on the Linux machine is also different
 
-I have create a set of Wiki documents to potential help with the setup and Ansible structure:
-
-[Home of the Wikis](https://github.com/thopper91/Ansible-on-Windows/wiki)
+I have create a set of Wiki documents to potential help with the setup and Ansible structure: [Home of the Wikis](https://github.com/thopper91/Ansible-on-Windows/wiki)
 
 ## Pre-requisites
-This can be found in the following documentation:
-
-[Required pre-requisites](https://github.com/thopper91/Ansible-on-Windows/wiki/Pre-requisites)
+This can be found in the following documentation: [Required pre-requisites](https://github.com/thopper91/Ansible-on-Windows/wiki/Pre-requisites)
 
 ## Folder Structure
-This can be found in the following documentation:
-
-[Ansible folder and file structure](https://github.com/thopper91/Ansible-on-Windows/wiki/Ansible-Structure---Folder-and-Files)
+This can be found in the following documentation: [Ansible folder and file structure](https://github.com/thopper91/Ansible-on-Windows/wiki/Ansible-Structure---Folder-and-Files)
 
 ## Playbooks
 All playbooks are stored in the roles folder, the playbooks in the master folder are the ones to be executed. If any variables have been used, these can be found in the roles section, find the playbook desired and if it has a 'tasks' and 'vars' folder, then variables was used.
