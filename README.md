@@ -3,27 +3,18 @@ The repository will assist you in using Ansible for a windows host machine. The 
 
 I have create a set of Wiki documents to potential help with the setup and Ansible structure:
 
-[Home of the Wikis](../wiki)
+[Home of the Wikis](https://github.com/thopper91/Ansible-on-Windows/wiki)
 
 ## Pre-requisites
-This can be found in the following documents:
+This can be found in the following documentation:
 
-
+[Required pre-requisites](../wiki/Pre-requisites)
 
 ## Folder Structure
-The folder structure in this project is exactly how it should be. If preferred to have ALL the ansible code in 1 playbook, you require to have those playbooks at this level and for the playbook to look something similar to the below. It is worth noting, splitting them as I have is seen as best practice:
-```yaml
----
-- hosts: windows #The hosts file in inventory
-  vars:
-    Tool: 'test.msi'
-    user: 'hoppert'
-  tasks:
-    - name: Install "{{ Tool }}" and wait for it to complete
-      win_msi:
-        path: C:\Users\{{ user }}\Documents\{{ Tool }}
-        wait: yes
-```
+This can be found in the following documentation:
+
+[Ansible folder and file structure](../wiki/Ansible-Structure---Folder-and-Files)
+
 ## Playbooks
 All playbooks are stored in the roles folder, the playbooks in the master folder are the ones to be executed. If any variables have been used, these can be found in the roles section, find the playbook desired and if it has a 'tasks' and 'vars' folder, then variables was used.
 
