@@ -17,6 +17,8 @@ This can be found in the following documentation: [Ansible folder and file struc
 0.0.0.2
 ```
 
+Also, in order for the below to run successfully you will need to ensure the user is part of the domain admin user group or has admin access otherwise Kerberos will flag as an error
+
 ## Playbooks
 All playbooks are stored in the roles folder, the playbooks in the master folder are the ones to be executed. If any variables have been used, these can be found in the roles section, find the playbook desired and if it has a 'tasks' and 'vars' folder, then variables was used.
 
