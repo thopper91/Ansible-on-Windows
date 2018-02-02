@@ -9,6 +9,14 @@ This can be found in the following documentation: [Required pre-requisites](http
 ## Folder Structure
 This can be found in the following documentation: [Ansible folder and file structure](https://github.com/thopper91/Ansible-on-Windows/wiki/Ansible-Structure---Folder-and-Files)
 
+**NOTE:** When it comes to creating host groups, they HAVE to be named _'windows'_ otherwise Ansible will not read it. One way to get around this is having ALL IPs & Domain names in the same group (like below) or having multiple host files with a select few IP and domain names in them. The second option does mean you will have to ensure you choose the correct invesntory file
+
+```
+[windows]
+0.0.0.1
+0.0.0.2
+```
+
 ## Playbooks
 All playbooks are stored in the roles folder, the playbooks in the master folder are the ones to be executed. If any variables have been used, these can be found in the roles section, find the playbook desired and if it has a 'tasks' and 'vars' folder, then variables was used.
 
