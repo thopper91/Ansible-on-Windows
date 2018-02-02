@@ -4,9 +4,8 @@ ansible_password: PASSWORD
 ansible_port: 5986
 ansible_connection: winrm
 ansible_winrm_server_cert_validation: ignore
-ansible_winrm_transport: credssp
 
 ### The below commands are still here incase you feel you need the machine to wait for a while. The default times are 20 & 30 seconds respectively
-#
+# ansible_winrm_transport: credssp
 # ansible_winrm_operation_timeout_sec: 60
 # ansible_winrm_read_timeout_sec: 70
