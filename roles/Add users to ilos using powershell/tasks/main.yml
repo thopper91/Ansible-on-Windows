@@ -1,0 +1,26 @@
+#This playbook will execute a Powershell script to create a user across all ilos
+#Steps:
+# 1) Copy powershell script to a specific location on host machine
+# 2) Ensure all powershell modules are installed. NOTE: This modules are saved in this location - C:\Program Files\WindowsPowerShell\Modules
+# 3) Execute Powershell script with additional information on the command line
+#
+---
+- name: Copy PowerShell script to server
+  win_copy:
+    src: ./Create_user_on_all_ilos.ps1
+    dest: C:\{{ userPath }}\Create_user_on_all_ilos.ps1
+
+- name: Ensure Powershell modules are added
+  win_psmodule:
+    name: "{{ item.name }}"
+    state: present #absent if wanting to remove
+  with_items:
+    - { name: 'FormatPx' }
+    - { name: 'SnippetPx' }
+    - { name: 'HPOneView.310' }
+    - { name: 'HPOneView.400' }
+
+- name: Run Powershell script with over writing default variables
+  win_shell: .\Create_user_on_all_ilos.ps1 -DefaultIP "{{ defaultIP }}" -username "{{ userName }}" -defaultpassword "{{ defaultPwd }}" -Defaultuser "{{ newUser }}" -Defaultuserpassword "{{ newUserPwd }}"
+  args:
+    chdir: C:\{{ userPath }}

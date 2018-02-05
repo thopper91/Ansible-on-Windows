@@ -1,6 +1,6 @@
 ---
 ansible_user: hoppert@MYDOMAIN.COM
-ansible_password: PASSWORD
+#ansible_password: PASSWORD
 ansible_port: 5986
 ansible_connection: winrm
 ansible_winrm_server_cert_validation: ignore

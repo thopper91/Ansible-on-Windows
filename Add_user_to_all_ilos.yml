@@ -1,0 +1,4 @@
+---
+- hosts: windows
+  roles:
+    - {role: Add users to ilos using powershell}

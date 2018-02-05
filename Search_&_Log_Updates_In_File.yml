@@ -1,6 +1,5 @@
 ### Created by thopper91 (2017)
 ---
 - hosts: windows
-  connection: local
   roles:
     - {role: Log Available Windows Updates}

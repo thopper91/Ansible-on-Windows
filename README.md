@@ -37,6 +37,7 @@ All playbooks are stored in the roles folder, the playbooks in the master folder
 
 Playbook | Windows Ansible Module used | Variables?
 :---: | :---: | :---:
+Add user to all ilos | win_copy, win_psmodule, win_shell | *Yes*
 Disable Windows Features | win_feature | *No*
 Enable Windows Features | win_feature | *No*
 Execute Powershell scripts | win_shell | *Yes*

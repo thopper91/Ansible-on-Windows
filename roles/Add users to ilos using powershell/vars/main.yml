@@ -1,0 +1,7 @@
+---
+defaultIP: '0.0.0.1'
+defaultPwd: 'password'
+newUser: 'tom-ps-test'
+newUserPwd: 'password01'
+userName: 'Administrator'
+userPath: 'Users\Administrator\Documents'
