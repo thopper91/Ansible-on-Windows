@@ -10,7 +10,7 @@ This can be found in the following documentation: [Required pre-requisites](http
 This can be found in the following documentation: [Ansible folder and file structure](https://github.com/thopper91/Ansible-on-Windows/wiki/Ansible-Structure---Folder-and-Files)
 
 ## Lessons Learned
-THis can be found in the following docummentation: [Lessons Learned](https://github.com/thopper91/Ansible-on-Windows/wiki/Lessons-Learned)
+This can be found in the following docummentation: [Lessons Learned](https://github.com/thopper91/Ansible-on-Windows/wiki/Lessons-Learned)
 
 ## Playbooks
 All playbooks are stored in the roles folder, the playbooks in the master folder are the ones to be executed. If any variables have been used, these can be found in the roles section, find the playbook desired and if it has a 'tasks' and 'vars' folder, then variables was used.
